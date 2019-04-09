@@ -1,0 +1,24 @@
+{
+  "name": "Portal ORIS Calculadora",
+  "version": "1.0",
+  "description": "Calculadora Automática de Horas para Timesheet",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://portal.orisrh.com/apontamento"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "jquery.min.js",
+        "contentScript.js"
+      ],
+      "css": [ 
+        "contentStyle.css"
+      ]
+    }
+  ]
+}
