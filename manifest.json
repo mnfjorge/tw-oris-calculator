@@ -1,6 +1,6 @@
 {
   "name": "Portal ORIS Calculadora",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Calculadora Automática de Horas para Timesheet",
   "manifest_version": 2,
   "permissions": [

@@ -1,6 +1,6 @@
 function calculateTime(checkin, checkout) {
   if (!checkin || !checkout) {
-    return 0;
+    return (0).toFixed(2);
   }
 
   checkin = convertToDecimal(checkin);
@@ -29,7 +29,10 @@ $('#tbApontamentoItens tbody tr').each(function () {
 
   var date = tr.find('td:eq(1)').text().trim();
 
-  if (date.indexOf('FOLGA') !== -1) {
+  if (
+    date.indexOf('FOLGA') !== -1 ||
+    date.indexOf('FERIADO') !== -1
+  ) {
     return;
   }
 
